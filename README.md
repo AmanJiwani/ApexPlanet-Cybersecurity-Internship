@@ -65,6 +65,3 @@ The focus of this task is to set up a secure lab environment, practice Linux fun
 
 ---
 
-
-Do you want me to also create a **sample cheatsheet (linux-cheatsheet.md)** with the most important commands for Task 1, so you can just add it to your repo?
-dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
