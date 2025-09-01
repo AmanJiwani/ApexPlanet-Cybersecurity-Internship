@@ -60,39 +60,48 @@ DNS is the **phonebook of the internet**. It translates **human-readable domain 
 nslookup google.com
 Gives the IP address of Google’s server.
 
-🖧 4. IP Addressing
+---
 
-IP address = Unique identifier for a device on a network.
+## 4. IP Addressing
 
-🔹 Types of IP:
+### IPv4
+- **32-bit address**, written as four octets (e.g., `192.168.1.1`)
+- **Classes**:
+  - Class A → `0.0.0.0 – 127.255.255.255`  
+  - Class B → `128.0.0.0 – 191.255.255.255`  
+  - Class C → `192.0.0.0 – 223.255.255.255`  
+  - Class D → `224.0.0.0 – 239.255.255.255` (Multicast)  
+  - Class E → `240.0.0.0 – 255.255.255.255` (Experimental)  
 
-IPv4: 32-bit, written as 192.168.1.1
+- **Private Ranges**:
+  - `10.0.0.0 – 10.255.255.255`  
+  - `172.16.0.0 – 172.31.255.255`  
+  - `192.168.0.0 – 192.168.255.255`  
 
-IPv6: 128-bit, written as 2001:db8::1
+- **Special Addresses**:
+  - `127.0.0.1` → Loopback (localhost)  
+  - `0.0.0.0` → Default route / any address  
+  - `255.255.255.255` → Broadcast  
 
-🔹 Classes of IPv4:
-Class	Range	Default Mask	Usage
-A	0.0.0.0 – 127.255.255.255	255.0.0.0	Large networks
-B	128.0.0.0 – 191.255.255.255	255.255.0.0	Medium networks
-C	192.0.0.0 – 223.255.255.255	255.255.255.0	Small networks
-D	224.0.0.0 – 239.255.255.255	N/A	Multicast
-E	240.0.0.0 – 255.255.255.255	N/A	Experimental
-🔹 Public vs Private IP:
+---
 
-Private IPs (used inside LAN):
+### IPv6
+- **128-bit address**, written as 8 groups of 4 hex digits (e.g., `2001:0db8:85a3:0000:0000:8a2e:0370:7334`)
+- Can be **shortened** (omit leading zeros or consecutive groups of zeros):  
+  `2001:db8:85a3::8a2e:370:7334`
+- **Types**:
+  - Global Unicast → Public addresses  
+  - Link-Local → Start with `fe80::/10`  
+  - Multicast → Start with `ff00::/8`  
+  - Loopback → `::1`  
 
-Class A → 10.0.0.0 – 10.255.255.255
+---
 
-Class B → 172.16.0.0 – 172.31.255.255
+### Subnetting (IPv4 Example)
+- IP: `192.168.1.10/24`  
+- Subnet mask: `255.255.255.0`  
+- Network: `192.168.1.0`  
+- Broadcast: `192.168.1.255`  
+- Host range: `192.168.1.1 – 192.168.1.254`  
 
-Class C → 192.168.0.0 – 192.168.255.255
-
-Public IPs → Used on the internet, assigned by ISPs
-
-✅ Quick Summary:
-
-OSI = 7 layers (theory), TCP/IP = 4 layers (practical)
-
-DNS = Converts domain → IP
-
-IP addressing = Identifies devices, IPv4 & IPv6
+---
