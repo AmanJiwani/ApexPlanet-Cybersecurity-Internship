@@ -58,3 +58,41 @@ DNS is the **phonebook of the internet**. It translates **human-readable domain 
 👉 Example:  
 ```bash
 nslookup google.com
+Gives the IP address of Google’s server.
+
+🖧 4. IP Addressing
+
+IP address = Unique identifier for a device on a network.
+
+🔹 Types of IP:
+
+IPv4: 32-bit, written as 192.168.1.1
+
+IPv6: 128-bit, written as 2001:db8::1
+
+🔹 Classes of IPv4:
+Class	Range	Default Mask	Usage
+A	0.0.0.0 – 127.255.255.255	255.0.0.0	Large networks
+B	128.0.0.0 – 191.255.255.255	255.255.0.0	Medium networks
+C	192.0.0.0 – 223.255.255.255	255.255.255.0	Small networks
+D	224.0.0.0 – 239.255.255.255	N/A	Multicast
+E	240.0.0.0 – 255.255.255.255	N/A	Experimental
+🔹 Public vs Private IP:
+
+Private IPs (used inside LAN):
+
+Class A → 10.0.0.0 – 10.255.255.255
+
+Class B → 172.16.0.0 – 172.31.255.255
+
+Class C → 192.168.0.0 – 192.168.255.255
+
+Public IPs → Used on the internet, assigned by ISPs
+
+✅ Quick Summary:
+
+OSI = 7 layers (theory), TCP/IP = 4 layers (practical)
+
+DNS = Converts domain → IP
+
+IP addressing = Identifies devices, IPv4 & IPv6
