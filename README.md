@@ -3,64 +3,52 @@
 **Intern:** Aman Jiwani  
 **Internship ID:** APSPL2518053  
 
-Welcome to my GitHub repository showcasing the tasks, projects, and deliverables I am completing during my **Cybersecurity & Ethical Hacking Internship** at **ApexPlanet Software Pvt. Ltd.**  
+Welcome to my GitHub repository showcasing the tasks, projects, and deliverables I completed during my **Cybersecurity & Ethical Hacking Internship** at **ApexPlanet Software Pvt. Ltd.**  
 
-This internship is giving me **hands-on experience** in network security, web application testing, exploitation, and incident response, using industry-standard tools and real-world scenarios.  
+This internship is giving me **hands-on experience** in cybersecurity through practical labs, tools, and real-world simulations.  
 
 ---
 
-## 📚 Internship Roadmap & Progress  
+## 📚 Completed Task  
 
-### 🔹 **Task 1 – Foundations of Cybersecurity** (Days 1–12) ✅ **Completed**  
-✔️ Built fundamentals: CIA Triad, Threats, Attack Vectors  
-✔️ Lab setup: Kali Linux, Metasploitable2, DVWA  
-✔️ Linux Commands, Networking Basics, Cryptography (Encryption, Hashing, SSL/TLS)  
-✔️ Tool Familiarization: Wireshark, Nmap, Burp Suite, Netcat  
+### ✅ **Task 1 – Foundations of Cybersecurity**  
+- Built fundamentals: CIA Triad, Threats, Attack Vectors  
+- Lab setup: Kali Linux, Metasploitable2, DVWA  
+- Linux Commands, Networking Basics, Cryptography (Encryption, Hashing, SSL/TLS)  
+- Tool Familiarization: Wireshark, Nmap, Burp Suite, Netcat  
 
 📂 Deliverables: [Task-1](./Task-1_Foundations-of-Cybersecurity)  
 
 ---
 
-### 🔹 **Task 2 – Network Security & Scanning** (Days 13–24) ⏳ **In Progress**  
-- Reconnaissance (Whois, Nslookup, Shodan, Google Dorking)  
-- Nmap TCP/UDP Scans, OS & Service Detection  
-- Vulnerability Scanning with Nessus / OpenVAS  
-- Packet Analysis with Wireshark  
-- Basic Firewall Rules with iptables  
-
-📂 Deliverables: [Task-2](./Task-2_Network-Security-Scanning)  
-
----
-
-### 🔹 **Task 3 – Web Application Security** (Days 25–36) ⏳ **Pending**  
-
-### 🔹 **Task 4 – Exploitation & System Security** (Days 37–48) ⏳ **Pending**  
-
-### 🔹 **Task 5 – Capstone Project & Incident Response** (Days 49–60) ⏳ **Pending**  
-
----
-
-## 🛠️ Tools & Technologies  
-
+## 🛠️ Tools & Technologies (Task 1)  
 - **Operating Systems:** Kali Linux, Metasploitable2, DVWA  
-- **Security Tools:** Wireshark, Nmap, Burp Suite, Nessus/OpenVAS, Metasploit, Hydra, John the Ripper  
-- **Concepts Covered:** Networking, Cryptography, Vulnerability Assessment, Web Security, Incident Response  
+- **Security Tools:** Wireshark, Nmap, Burp Suite, Netcat  
+- **Concepts Covered:** CIA Triad, Threats, Linux Basics, Networking, Cryptography  
 
 ---
 
-## 📜 Deliverables  
+## 📜 Deliverables (Task 1)  
+- ✅ Lab Setup Report with Screenshots  
+- ✅ Linux Command Notes & Cheat Sheet  
+- ✅ Initial Tool Testing (Wireshark, Nmap)  
+- ✅ 5-min Video Walkthrough (submitted on LinkedIn)  
 
-- ✅ **Task 1 Report, Notes & Video Walkthrough**  
-- ⏳ Task 2 Deliverables (In Progress)  
-- ⏳ Task 3–5 Deliverables (Pending, will be updated as completed)  
+---
+
+## 📈 Key Learnings  
+- Set up a **professional hacking lab** with attacker & victim machines  
+- Understood **threat types & attack vectors**  
+- Practiced **Linux administration & networking commands**  
+- Explored **cryptography basics (encryption, hashing, SSL/TLS)**  
+- Gained familiarity with **Wireshark, Nmap, and Burp Suite**  
 
 ---
 
 ## 📧 Contact  
-
 🔗 **LinkedIn (Video Demos):** [My LinkedIn Profile](#)  
 📩 **Email (Official Internship Contact):** official@apexplanet.in  
 
 ---
 
-⭐ This repository will be continuously updated as I progress through the internship.  
+⭐ This repository will be updated as I complete further tasks during the internship.  
