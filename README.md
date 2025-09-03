@@ -1,67 +1,82 @@
-# Cybersecurity Internship – Task 1 (Foundations & Lab Setup)
+# ApexPlanet Cybersecurity & Ethical Hacking Internship
+**Internship Duration:** 01 Sept 2025 – 30 Oct 2025  
+**Intern:** Aman Jiwani  
+**Internship ID:** APSPL2518053  
 
-## 📌 Overview
-
-This repository contains deliverables for **Task 1 (Days 1–12)** of my **Cybersecurity & Ethical Hacking Internship** at **ApexPlanet**.
-The focus of this task is to set up a secure lab environment, practice Linux fundamentals, understand networking basics, explore cryptography, and get familiar with essential cybersecurity tools.
-
----
-
-## 🛠 Lab Environment Setup
-
-* **VirtualBox** as the virtualization platform
-* **Kali Linux (Attacker Machine)** – IP: `192.168.56.105`
-* **Metasploitable2 (Target Machine)** – IP: `192.168.56.104`
-* **Host-Only Network** used for isolated testing
+This repository contains my work, reports, notes, and deliverables completed during the **Cybersecurity & Ethical Hacking Internship** at **ApexPlanet Software Pvt. Ltd.**
 
 ---
 
-## 📂 Repository Contents
+## 📌 Internship Tasks
 
-* 📁 **Screenshots/** → Proof of lab setup & tool usage
-* 📁 **Notes/**
+### 🔹 Task 1 – Foundations of Cybersecurity (Days 1–12)
+- CIA Triad, Threats & Attack Vectors  
+- Lab Setup (Kali Linux, Metasploitable2, DVWA)  
+- Linux Basics & Networking Fundamentals  
+- Cryptography (Encryption, Hashing, SSL/TLS)  
+- Tools: Wireshark, Nmap, Burp Suite, Netcat  
 
-  * `linux-cheatsheet.md` – Linux navigation, permissions, package management
-  * `networking-basics.md` – OSI, TCP/IP, DNS, IP addressing
-  * `cryptography-basics.md` – Symmetric/Asymmetric encryption, hashing, SSL/TLS
-  * `cybersecurity-basics.md` – CIA triad, threats, attack vectors
-* 📄 **Lab-Setup-Report.pdf** – Detailed PDF with screenshots and explanations
-* 📄 **README.md** – This file
-
----
-
-## 🧑‍💻 Key Topics Covered
-
-* **Cybersecurity Basics** – CIA Triad, threats, attack vectors
-* **Linux Fundamentals** – File system, permissions, package management, networking commands
-* **Networking Basics** – OSI layers, TCP/IP, DNS, IP addressing, NAT
-* **Cryptography Basics** – Symmetric vs Asymmetric encryption, hashing, SSL/TLS
-* **Tool Familiarization** – Wireshark, Nmap, Burp Suite, Netcat
+📂 Deliverables: [Task-1 Folder](./Task-1_Foundations-of-Cybersecurity)
 
 ---
 
-## 📸 Sample Screenshots (from `Screenshots/` folder)
+### 🔹 Task 2 – Network Security & Scanning (Days 13–24)
+- Reconnaissance (Whois, Nslookup, Google Dorking, Shodan)  
+- Nmap Scanning (TCP/UDP, Service/OS Detection)  
+- Vulnerability Scanning (Nessus / OpenVAS)  
+- Packet Analysis (Wireshark)  
+- Firewall Rules (iptables)  
 
-* Kali Linux running successfully
-* Metasploitable2 target machine
-* Ping test between Kali & Metasploitable2
-* Wireshark ICMP capture
-* Linux command outputs
-
----
-
-## 🎯 Deliverables
-
-* ✅ **Lab Setup Report (PDF)**
-* ✅ **GitHub Repo with Notes & Cheatsheet**
-* ✅ **5-min Video Walkthrough** (linked on LinkedIn – add link here when uploaded)
+📂 Deliverables: [Task-2 Folder](./Task-2_Network-Security-Scanning)
 
 ---
 
-## 🔗 Additional Links
+### 🔹 Task 3 – Web Application Security (Days 25–36)
+- SQL Injection (SQLi)  
+- Cross-Site Scripting (XSS)  
+- Cross-Site Request Forgery (CSRF)  
+- File Inclusion Attacks (LFI/RFI)  
+- Burp Suite Advanced Testing & Security Headers  
 
-* [LinkedIn Demo Video](#) *(to be added)*
-* [Internship Program – ApexPlanet](https://www.apexplanet.in/internship/)
+📂 Deliverables: [Task-3 Folder](./Task-3_Web-Application-Security)
 
 ---
 
+### 🔹 Task 4 – Exploitation & System Security (Days 37–48)
+- Penetration Testing Methodology  
+- Exploitation using Metasploit (Reverse Shell, Post-Exploitation)  
+- Password Attacks (Hydra, John the Ripper)  
+- Social Engineering (Simulation)  
+- Malware Basics & System Hardening  
+
+📂 Deliverables: [Task-4 Folder](./Task-4_Exploitation-System-Security)
+
+---
+
+### 🔹 Task 5 – Capstone Project & Incident Response (Days 49–60)
+- Web App Pentest / Network Vulnerability Assessment / Mini SIEM / Phishing Simulation  
+- Project Planning & Implementation  
+- Incident Response Simulation (Detect, Contain, Report)  
+- Final Report & Presentation  
+
+📂 Deliverables: [Task-5 Folder](./Task-5_Capstone-Incident-Response)
+
+---
+
+## ⚙️ Tools & Technologies Used
+- **Operating Systems:** Kali Linux, Metasploitable2, DVWA  
+- **Tools:** Wireshark, Nmap, Burp Suite, Nessus, Hydra, John the Ripper, Metasploit  
+- **Languages/Concepts:** Bash, SQL, Cryptography, Networking, Web Security  
+
+---
+
+## 📜 Deliverables Summary
+- Reports (Nmap, Nessus, Exploitation, Capstone)  
+- Screenshots & Logs  
+- GitHub Repository with Notes & Scripts  
+- Video Presentations (Uploaded on LinkedIn, linked in submissions)  
+
+---
+
+## 📧 Contact
+For verification and submission, please reach out at: **official@apexplanet.in**  
