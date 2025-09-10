@@ -1,1 +1,124 @@
+# 🌐 Networking Basics
+
+This document provides a beginner-friendly overview of essential networking concepts, useful for cybersecurity and IT fundamentals.
+
+---
+
+## 📌 1. OSI Model
+
+The **OSI (Open Systems Interconnection) Model** has **7 layers**, each with a specific function:
+
+| Layer | Function | Example Protocols |
+|-------|----------|-------------------|
+| **7. Application** | User interface, network services | HTTP, FTP, SMTP, DNS |
+| **6. Presentation** | Data formatting, encryption, compression | SSL/TLS, JPEG, GIF |
+| **5. Session** | Establish/manage/end sessions | NetBIOS, RPC |
+| **4. Transport** | End-to-end communication, reliability | TCP, UDP |
+| **3. Network** | Logical addressing, routing | IP, ICMP |
+| **2. Data Link** | MAC addressing, error detection | Ethernet, PPP, Switches |
+| **1. Physical** | Transmission of raw bits | Cables, Hubs, Wireless |
+
+🔑 **Tip:** Think of it as **"All People Seem To Need Data Processing"** (Application → Physical).
+
+---
+
+## 📌 2. TCP/IP Model
+
+The **TCP/IP Model** is more practical and widely used than OSI. It has **4 layers**:
+
+| Layer | Function | Example Protocols |
+|-------|----------|-------------------|
+| **Application** | End-user services | HTTP, DNS, FTP |
+| **Transport** | Reliable/unreliable communication | TCP, UDP |
+| **Internet** | Logical addressing, routing | IP, ICMP, ARP |
+| **Network Access** | Physical data transmission | Ethernet, Wi-Fi |
+
+📝 **Mapping OSI → TCP/IP**  
+- OSI Layers 7, 6, 5 → TCP/IP Application  
+- OSI Layer 4 → TCP/IP Transport  
+- OSI Layer 3 → TCP/IP Internet  
+- OSI Layers 2, 1 → TCP/IP Network Access  
+
+---
+
+## 📌 3. DNS (Domain Name System)
+
+DNS converts **domain names** into **IP addresses**.
+
+- **Forward Lookup:** Name → IP (e.g., `google.com` → `142.250.182.14`)  
+- **Reverse Lookup:** IP → Name  
+
+### 🏷️ DNS Record Types
+| Record | Purpose | Example |
+|--------|---------|---------|
+| **A** | Maps domain → IPv4 | `example.com → 93.184.216.34` |
+| **AAAA** | Maps domain → IPv6 | `example.com → 2606:2800:220:1:248:1893:25c8:1946` |
+| **CNAME** | Alias to another domain | `mail.example.com → googlemail.com` |
+| **MX** | Mail servers | `example.com → mail.protection.outlook.com` |
+| **TXT** | Text info (SPF, DKIM, security) | `v=spf1 include:_spf.google.com ~all` |
+
+---
+
+## 📌 4. IP Addressing
+
+An **IP address** is a unique identifier for devices on a network.
+
+### 🔹 IPv4
+- **32-bit address** (4 octets, e.g., `192.168.1.1`)  
+- Written as **dotted decimal notation**  
+- Total addresses: **~4.3 billion**  
+
+#### 📊 IPv4 Classes
+| Class | Range | Default Subnet Mask | Use |
+|-------|-------|----------------------|-----|
+| **A** | 1.0.0.0 – 126.255.255.255 | 255.0.0.0 | Large networks |
+| **B** | 128.0.0.0 – 191.255.255.255 | 255.255.0.0 | Medium networks |
+| **C** | 192.0.0.0 – 223.255.255.255 | 255.255.255.0 | Small networks |
+| **D** | 224.0.0.0 – 239.255.255.255 | N/A | Multicast |
+| **E** | 240.0.0.0 – 255.255.255.255 | N/A | Research |
+
+✅ **Private IP ranges:**  
+- Class A: `10.0.0.0 – 10.255.255.255`  
+- Class B: `172.16.0.0 – 172.31.255.255`  
+- Class C: `192.168.0.0 – 192.168.255.255`  
+
+---
+
+### 🔹 IPv6
+- **128-bit address** (e.g., `2001:0db8:85a3:0000:0000:8a2e:0370:7334`)  
+- Written in **hexadecimal, separated by colons**  
+- Provides **3.4 × 10³⁸ addresses**  
+
+✅ **Types of IPv6 addresses:**  
+- **Global Unicast:** Public, internet-routable  
+- **Link-Local:** Starts with `fe80::`, used within a local link  
+- **Multicast:** Starts with `ff00::`, one-to-many communication  
+- **Anycast:** Same address assigned to multiple nodes (nearest one responds)  
+
+---
+
+## 📌 5. Subnetting (Quick Note)
+
+Subnetting divides a network into smaller parts.
+
+- Example: `192.168.1.0/24` → 256 IPs (0–255)  
+- Split into `/25` → 2 subnets (0–127, 128–255)  
+
+🔑 **CIDR (Classless Inter-Domain Routing):**  
+- `/24` → 255.255.255.0 → 256 addresses  
+- `/16` → 255.255.0.0 → 65,536 addresses  
+
+---
+
+## ✅ Summary
+
+- **OSI Model:** 7 layers, conceptual  
+- **TCP/IP Model:** 4 layers, practical  
+- **DNS:** Resolves names ↔ IPs  
+- **IP Addressing:** IPv4 (32-bit), IPv6 (128-bit)  
+- **Subnetting:** Efficiently splits networks  
+
+---
+
+📚 *Great starting point for cybersecurity, penetration testing, and networking fundamentals.*
 
