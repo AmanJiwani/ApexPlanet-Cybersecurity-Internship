@@ -13,7 +13,7 @@ This task focuses on setting up the cybersecurity lab environment, learning Linu
 - `Notes/` → Markdown notes on Linux, Networking, Cryptography, Cybersecurity Basics  
 - `Report/` → `Foundations_Report.pdf` (compiled task report with screenshots)  
 - `Screenshots/` → Lab setup & command execution screenshots  
-- `Video/` → Demo video file or video link (YouTube/Drive)  
+
 
 
 ## 🎥 Demo Video
