@@ -13,7 +13,7 @@ This internship is giving me **hands-on experience** in cybersecurity through pr
 
 ### ✅ **Task 1 – Foundations of Cybersecurity**  
 - Built fundamentals: CIA Triad, Threats, Attack Vectors  
-- Lab setup: Kali Linux, Metasploitable2, DVWA  
+- Lab setup: Kali Linux, Metasploitable2
 - Linux Commands, Networking Basics, Cryptography (Encryption, Hashing, SSL/TLS)  
 - Tool Familiarization: Wireshark, Nmap, Burp Suite, Netcat  
 
@@ -22,7 +22,7 @@ This internship is giving me **hands-on experience** in cybersecurity through pr
 ---
 
 ## 🛠️ Tools & Technologies (Task 1)  
-- **Operating Systems:** Kali Linux, Metasploitable2, DVWA  
+- **Operating Systems:** Kali Linux, Metasploitable2
 - **Security Tools:** Wireshark, Nmap, Burp Suite, Netcat  
 - **Concepts Covered:** CIA Triad, Threats, Linux Basics, Networking, Cryptography  
 
