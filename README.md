@@ -19,8 +19,6 @@ This internship provided **hands-on experience in cybersecurity** through practi
 - **Cryptography Basics:** Encryption, Hashing, SSL/TLS  
 - **Tool Familiarization:** Wireshark, Nmap  
 
-**📂 Deliverables:** [Task-1 Repository](./Task-1: Foundations of Cybersecurity)
-
 ---
 
 ## 🛠️ Tools & Technologies (Task 1)
