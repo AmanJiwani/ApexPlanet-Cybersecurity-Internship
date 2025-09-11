@@ -6,8 +6,6 @@
 
 Welcome to my GitHub repository showcasing the tasks, projects, and deliverables I completed during my **Cybersecurity & Ethical Hacking Internship** at ApexPlanet Software Pvt. Ltd.  
 
-This internship provided **hands-on experience in cybersecurity** through practical labs, tools, and real-world simulations.  
-
 ---
 
 ## 📚 Completed Tasks
