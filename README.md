@@ -47,10 +47,4 @@ This internship provided **hands-on experience in cybersecurity** through practi
 
 ---
 
-## 📧 Contact
-- **LinkedIn (Video Demos):** [My LinkedIn Profile](https://www.linkedin.com/in/amanjiwani)  
-- **Email (Official Internship Contact):** official@apexplanet.in  
-
----
-
 ⭐ This repository will be updated as I complete further tasks during the internship.
