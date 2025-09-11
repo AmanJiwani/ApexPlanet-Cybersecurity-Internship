@@ -39,11 +39,11 @@ This internship provided **hands-on experience in cybersecurity** through practi
 ---
 
 ## 📈 Key Learnings
-- Set up a professional hacking lab with attacker & victim machines  
-- Understood cybersecurity threat types & attack vectors  
-- Practiced Linux administration & networking commands  
-- Explored cryptography basics (encryption, hashing, SSL/TLS)  
-- Gained hands-on experience with Wireshark and Nmap  
+- Set up a **professional hacking lab** with attacker & victim machines  
+- Understood **threat types & attack vectors**  
+- Practiced **Linux administration & networking commands**  
+- Explored **cryptography basics (encryption, hashing, SSL/TLS)**  
+- Gained familiarity with **Wireshark, Nmap, and Burp Suite**  
 
 ---
 
