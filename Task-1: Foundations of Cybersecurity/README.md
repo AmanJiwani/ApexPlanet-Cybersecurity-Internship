@@ -17,7 +17,7 @@ This task focuses on setting up the cybersecurity lab environment, learning Linu
 
 
 ## 🎥 Demo Video
-Watch the Task 1 lab setup demo video here: bit.ly/3JVv2c5
+Watch the Task 1 lab setup demo video here: [Demo Video](https://bit.ly/3JVv2c5)
 
 ## ✅ Status  
 ✔ Task-1 Completed Successfully  
