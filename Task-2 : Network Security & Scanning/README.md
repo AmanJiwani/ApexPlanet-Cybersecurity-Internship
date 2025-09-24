@@ -1,8 +1,5 @@
 # 🛡️ Network Scanning & Vulnerability Assessment Project
 
-![License](https://img.shields.io/badge/License-MIT-blue)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-
 ---
 
 ## 👤 Author
@@ -40,22 +37,21 @@ Demonstrate fundamental cybersecurity operations in a lab environment, including
 - Nmap TCP & UDP Scans  
 - Service Version Detection (`-sV`)  
 - OS Detection (`-O`)  
-- Scan report included in [`/nmap/nmap_scan_report.md`](./nmap/nmap_scan_report.md)
+- Scan report included in `/nmap/nmap_scan_report.md`
 
 ### 3️⃣ Vulnerability Scanning
 - Nessus Essentials used for scanning  
-- Scan report and analysis in [`/vuln_scanning/`](./vuln_scanning/)
+- Scan report and analysis stored in `/vuln_scanning/`
 
 ### 4️⃣ Packet Analysis
 - Captured HTTP, FTP, DNS traffic  
 - Filtered credentials from unencrypted FTP  
-- Simulated SYN flood attack using `hping3`  
-- Packet captures stored in [`/packet_analysis/`](./packet_analysis/)
+- Packet captures stored in `/packet_analysis/`  
 
 ### 5️⃣ Firewall Basics
 - Configured `iptables` rules to allow/deny specific ports  
 - Demonstrated blocking a port scan attempt  
-- Files stored in [`/firewall/`](./firewall/)
+- Files stored in `/firewall/`
 
 ---
 
@@ -64,7 +60,7 @@ Demonstrate fundamental cybersecurity operations in a lab environment, including
 - Nessus/OpenVAS Vulnerability Report  
 - Packet captures (`.pcap`)  
 - Firewall rules and demonstration  
-- [Demo Video Link](demo_video_link.txt)
+- Demo Video (local file)
 
 ---
 
@@ -80,6 +76,3 @@ Demonstrate fundamental cybersecurity operations in a lab environment, including
 ## ⚡ Notes
 - All experiments conducted in a safe, isolated host-only lab environment  
 - No sensitive or personal data exposed  
-- Workflow designed to demonstrate SOC-level reconnaissance and scanning skills  
-
-
