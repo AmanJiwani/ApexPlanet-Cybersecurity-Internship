@@ -82,10 +82,10 @@ All work was performed in a controlled lab environment using Kali Linux (attacke
 
 ---
 ## 📌 Observations & Key Learnings (Task 2)
-- **Identified open ports, services, and OS using Nmap 
-- **Performed vulnerability assessment and prioritized using CVSS  
-- **Captured and analyzed network packets to detect unencrypted credentials
-- *Applied firewall rules to block attacker IP and prevent reconnaissance
+- Identified open ports, services, and OS using Nmap 
+- Performed vulnerability assessment and prioritized using CVSS  
+- Captured and analyzed network packets to detect unencrypted credentials
+- Applied firewall rules to block attacker IP and prevent reconnaissance
 
 
 
