@@ -1,47 +1,27 @@
 1. Full TCP Port Scan
 sudo nmap -Pn -p- -T4 <TARGET_IP>
-
-
 Purpose: Discover all open TCP ports on the target.
-
 -Pn: Skip ping, assume target is online.
-
 -p-: Scan all 65535 TCP ports.
-
 -T4: Faster execution.
 
 2. SYN Scan + Service Version + OS Detection
 sudo nmap -sS -sV -O --osscan-guess -p- -T4 <TARGET_IP>
-
-
 Purpose: Identify open ports stealthily, detect running services, versions, and OS.
-
 -sS: Stealth SYN scan.
-
 -sV: Detect service/version.
-
 -O: Detect OS.
-
 --osscan-guess: Make best guess if OS uncertain.
-
 -p- & -T4: Scan all ports quickly.
 
 3. UDP Scan (Targeted)
 sudo nmap -sU -p 53,67,68,69,123,161 -T3 <TARGET_IP>
-
-
 Purpose: Check common UDP services like DNS, DHCP, NTP.
-
 -sU: Scan UDP ports.
-
 -p: Target specific common UDP ports.
-
 -T3: Moderate speed for reliability.
 
 4. Detailed Service Version Detection
 sudo nmap -sV --version-intensity 5 -p <comma-separated open ports> <TARGET_IP>
-
-
 Purpose: Get detailed service/version info on specific ports.
-
 --version-intensity 5: Maximum detection intensity.
