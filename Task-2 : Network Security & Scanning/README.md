@@ -54,6 +54,9 @@ Demonstrate fundamental cybersecurity operations in a lab environment, including
 - Files stored in `/firewall/`
 
 ---
+## 🎥 Demo Video
+Watch the Task 1 lab setup demo video here: [Demo Video](https://bit.ly/4nLnkjh)
+---
 
 ## 📦 Deliverables
 - Nmap Scan Report (`/Nmap Scan Report.pdf`)  
