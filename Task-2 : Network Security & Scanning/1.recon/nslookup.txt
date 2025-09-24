@@ -16,4 +16,4 @@
 
 ## Why Important:
 - Attackers can use this info to **identify target IPs**, map networks, or plan attacks like port scanning or exploitation.
-- In the lab, we replace public domains with VM IPs like 192.168.56.102 for safe practice.
+
