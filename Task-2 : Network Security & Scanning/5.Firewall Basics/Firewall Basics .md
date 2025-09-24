@@ -12,7 +12,7 @@ Aman Jiwani
 - **Iptables**  
 - **Date:** 24 Sep 2025  
 - **Target IP:** 192.168.56.104  
-- **Attacker IP:** 192.168.56.101  
+- **Attacker IP:** 192.168.56.105  
 
 ---
 
