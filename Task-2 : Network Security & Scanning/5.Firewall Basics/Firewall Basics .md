@@ -1,6 +1,3 @@
-Here’s a **short, GitHub-ready Markdown** for your **Firewall Basics lab**, styled like your Nessus and Packet Analysis labs:
-
-````markdown
 # Firewall Basics – Metasploitable2 Lab
 
 ## Author
@@ -51,69 +48,48 @@ sudo iptables -A INPUT -j DROP
 
 # 7. Check rules
 sudo iptables -L -v -n --line-numbers
-````
+Explanation of Commands
 
-**Explanation of Commands**
+-F / -X → Clears old rules.
 
-* `-F / -X` → Clears old rules.
-* `-i lo -j ACCEPT` → Allows local programs to communicate.
-* `-m conntrack --ctstate ESTABLISHED,RELATED` → Lets return traffic pass.
-* `--dport 22 -j ACCEPT` → Allows SSH connections.
-* `-s <IP> -j DROP` → Blocks traffic from attacker.
-* Final `-j DROP` → Blocks everything else not allowed.
+-i lo -j ACCEPT → Allows local programs to communicate.
 
----
+-m conntrack --ctstate ESTABLISHED,RELATED → Lets return traffic pass.
 
-## Verification from Attacker (Kali)
+--dport 22 -j ACCEPT → Allows SSH connections.
 
-**Before firewall:**
+-s <IP> -j DROP → Blocks traffic from attacker.
 
-```bash
+Final -j DROP → Blocks everything else not allowed.
+
+Verification from Attacker (Kali)
+Before firewall:
+
+bash
+Copy code
 sudo nmap -Pn -sS -p- -T4 <TARGET_IP>
-```
+Screenshot: screenshots/nmap_before_block.png
 
-**Screenshot:** `screenshots/nmap_before_block.png`
+After firewall rules applied:
 
-**After firewall rules applied:**
-
-```bash
+bash
+Copy code
 sudo nmap -Pn -sS -p- -T4 <TARGET_IP>
-```
+Screenshot: screenshots/nmap_after_block.png
 
-**Screenshot:** `screenshots/nmap_after_block.png`
+Many ports should show as timed out or filtered, confirming the firewall is active.
 
-> Many ports should show as timed out or filtered, confirming the firewall is active.
-
----
-
-## Reset Firewall (if needed)
-
-```bash
+Reset Firewall (if needed)
+bash
+Copy code
 sudo iptables -F
 sudo iptables -X
 sudo iptables -P INPUT ACCEPT
 sudo iptables -P FORWARD ACCEPT
 sudo iptables -P OUTPUT ACCEPT
-```
+Observations & Learning
+Iptables can selectively block attacker IPs while allowing essential traffic.
 
----
+Default DROP policy ensures unknown/unwanted traffic is blocked.
 
-## Observations & Learning
-
-* Iptables can selectively block attacker IPs while allowing essential traffic.
-* Default DROP policy ensures unknown/unwanted traffic is blocked.
-* Verification with Nmap helps visualize active firewall rules.
-
----
-
-## References
-
-* [Iptables Documentation](https://linux.die.net/man/8/iptables)
-* [Metasploitable2 Lab](https://sourceforge.net/projects/metasploitable/)
-
-```
-
-This version is **short, consistent with your other lab notes**, and ready to paste into GitHub.  
-
-If you want, I can **combine this Firewall lab with your Nmap and Wireshark labs** into **one consolidated “Cybersecurity Labs – GitHub” Markdown** for all labs. Do you want me to do that?
-```
+Verification with Nmap helps visualize active firewall rules.
