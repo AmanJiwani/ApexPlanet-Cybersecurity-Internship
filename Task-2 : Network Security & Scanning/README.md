@@ -37,16 +37,16 @@ Demonstrate fundamental cybersecurity operations in a lab environment, including
 - Nmap TCP & UDP Scans  
 - Service Version Detection (`-sV`)  
 - OS Detection (`-O`)  
-- **Scan Report:** /2.Port & Service Scanning /Nmap Scan Report.pdf
+
 
 ### 3️⃣ Vulnerability Scanning
 - Nessus Essentials used for scanning  
-- **Vulnerability Report:** /Nessus Report.pdf
+  
 
 ### 4️⃣ Packet Analysis
 - Captured HTTP, FTP, DNS traffic  
 - Filtered credentials from unencrypted FTP  
-- Packet captures stored in `/packet_analysis/`  
+  
 
 ### 5️⃣ Firewall Basics
 - Configured `iptables` rules to allow/deny specific ports  
@@ -58,7 +58,6 @@ Demonstrate fundamental cybersecurity operations in a lab environment, including
 ## 📦 Deliverables
 - Nmap Scan Report (`/Nmap Scan Report.pdf`)  
 - Nessus/OpenVAS Vulnerability Report (`/Nessus Report.pdf`)  
-- Packet captures (`.pcap`)  
 - Firewall rules and demonstration  
 - Demo Video (local file)
 
@@ -76,4 +75,4 @@ Demonstrate fundamental cybersecurity operations in a lab environment, including
 ## ⚡ Notes
 - All experiments conducted in a safe, isolated host-only lab environment  
 - No sensitive or personal data exposed  
-- Workflow demonstrates SOC-level reconnaissance and scanning skills  
+
