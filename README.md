@@ -52,9 +52,9 @@ All work was performed in a controlled lab environment using Kali Linux (attacke
 
 3. **Vulnerability Scanning (Nessus Essentials)**
    - Created a basic network scan on target IP  
-   - Generated PDF report: `/vuln_scanning/nessus_report.pdf`  
+   - Generated PDF report: `Nessus Report.pdf`  
    - Categorized vulnerabilities (Critical, High, Medium, Low)  
-   - Remediation suggestions included in `/vuln_scanning/vuln_analysis.md`  
+   - Remediation suggestions included in `vuln_analysis.md`  
 
 4. **Packet Analysis (Wireshark)**
    - Captured HTTP, FTP, and DNS traffic  
