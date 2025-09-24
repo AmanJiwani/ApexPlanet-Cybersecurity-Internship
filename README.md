@@ -60,8 +60,7 @@ All work was performed in a controlled lab environment using Kali Linux (attacke
    - Captured HTTP, FTP, and DNS traffic  
    - Filtered FTP credentials using `frame contains "USER"` and `frame contains "PASS"`  
    - Observed unencrypted protocols leaking sensitive information  
-   - Screenshots of captured packets stored in `/packet_analysis/screenshots/`  
-   - Notes documented in `/packet_analysis/packet_analysis.md`  
+   
 
 5. **Firewall Basics (iptables)**
    - Cleared old rules and created simple allow/deny rules  
