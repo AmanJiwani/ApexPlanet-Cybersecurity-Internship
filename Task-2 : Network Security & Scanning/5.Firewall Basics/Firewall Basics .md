@@ -3,93 +3,55 @@
 ## Author
 Aman Jiwani  
 
-## Date
-24 Sep 2025  
+## Lab Setup
+- **Attacker VM:** Kali Linux  
+- **Target VM:** Metasploitable2  
+- **Network:** Host-only  
 
-## Target
-192.168.56.104  
-
-## Attacker (Kali) IP
-192.168.56.101  
-
-## Network
-Host-only  
+## Tool
+- **Iptables**  
+- **Date:** 24 Sep 2025  
+- **Target IP:** 192.168.56.104  
+- **Attacker IP:** 192.168.56.101  
 
 ---
 
 ## Lab Objective
-- Create basic firewall rules using iptables.  
-- Block a specific attacker IP.  
-- Demonstrate filtering of unwanted traffic while allowing essential services.  
+- Create basic firewall rules.  
+- Block specific attacker IP.  
+- Filter unwanted traffic while allowing essential services.  
 
 ---
 
-## Commands on Target (Metasploitable2)
+## Firewall Rules Applied
 
+| Step | Command | Purpose |
+|------|---------|---------|
+| 1 | `sudo iptables -F / -X` | Clear old rules |
+| 2 | `sudo iptables -A INPUT -i lo -j ACCEPT` | Allow loopback |
+| 3 | `sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT` | Allow established connections |
+| 4 | `sudo iptables -A INPUT -p tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT` | Allow SSH |
+| 5 | `sudo iptables -A INPUT -s 192.168.56.101 -j DROP` | Block attacker IP |
+| 6 | `sudo iptables -A INPUT -j DROP` | Drop all other traffic |
+| 7 | `sudo iptables -L -v -n --line-numbers` | Verify rules |
+
+---
+
+## Verification with Nmap
+
+| Stage | Command | Screenshot |
+|-------|---------|------------|
+| Before firewall | `sudo nmap -Pn -sS -p- -T4 <TARGET_IP>` | `screenshots/nmap_before_block.png` |
+| After firewall | `sudo nmap -Pn -sS -p- -T4 <TARGET_IP>` | `screenshots/nmap_after_block.png` |
+
+> Many ports should show as timed out/filtered after firewall rules.
+
+---
+
+## Reset Firewall (if needed)
 ```bash
-# 1. Clear old rules
-sudo iptables -F
-sudo iptables -X
-
-# 2. Allow loopback
-sudo iptables -A INPUT -i lo -j ACCEPT
-
-# 3. Allow established connections
-sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
-
-# 4. Allow SSH
-sudo iptables -A INPUT -p tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT
-
-# 5. Block attacker IP
-sudo iptables -A INPUT -s 192.168.56.101 -j DROP
-
-# 6. Drop all other traffic
-sudo iptables -A INPUT -j DROP
-
-# 7. Check rules
-sudo iptables -L -v -n --line-numbers
-Explanation of Commands
-
--F / -X → Clears old rules.
-
--i lo -j ACCEPT → Allows local programs to communicate.
-
--m conntrack --ctstate ESTABLISHED,RELATED → Lets return traffic pass.
-
---dport 22 -j ACCEPT → Allows SSH connections.
-
--s <IP> -j DROP → Blocks traffic from attacker.
-
-Final -j DROP → Blocks everything else not allowed.
-
-Verification from Attacker (Kali)
-Before firewall:
-
-bash
-Copy code
-sudo nmap -Pn -sS -p- -T4 <TARGET_IP>
-Screenshot: screenshots/nmap_before_block.png
-
-After firewall rules applied:
-
-bash
-Copy code
-sudo nmap -Pn -sS -p- -T4 <TARGET_IP>
-Screenshot: screenshots/nmap_after_block.png
-
-Many ports should show as timed out or filtered, confirming the firewall is active.
-
-Reset Firewall (if needed)
-bash
-Copy code
 sudo iptables -F
 sudo iptables -X
 sudo iptables -P INPUT ACCEPT
 sudo iptables -P FORWARD ACCEPT
 sudo iptables -P OUTPUT ACCEPT
-Observations & Learning
-Iptables can selectively block attacker IPs while allowing essential traffic.
-
-Default DROP policy ensures unknown/unwanted traffic is blocked.
-
-Verification with Nmap helps visualize active firewall rules.
