@@ -1,1 +1,16 @@
+# Whois Notes
+- Command used: whois google.com
+- Purpose: To gather **domain ownership, registrar, creation/expiry date, contact info, and DNS servers**.
+- Output Explanation:
+  - Domain Name: GOOGLE.COM → shows the domain being queried
+  - Registrar: MarkMonitor Inc. → company managing the domain registration
+  - Creation Date: 1997-09-15 → when domain was registered
+  - Expiry Date: 2028-09-14 → when domain registration ends
+  - Domain Status: clientDeleteProhibited, clientTransferProhibited, etc. → shows domain protections
+  - Name Servers: NS1.GOOGLE.COM, NS2.GOOGLE.COM → DNS servers handling the domain
+  - DNSSEC: unsigned → whether DNSSEC security is enabled
+- Observations:
+  - Domain is well protected with multiple status flags
+  - Shows administrative and technical info (emails, phone numbers)
+- Why important: Attackers use Whois to gather **ownership and network info** for social engineering or targeting the company. 
 
