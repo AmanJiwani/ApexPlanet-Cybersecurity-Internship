@@ -10,7 +10,7 @@ Aman Jiwani
 
 ## Scan Tool
 - **Tool:** Nmap  
-- **Scan Date:** Tue, 24 Sep 2025  
+- **Scan Date:** Tue, 22 Sep 2025  
 - **Target IP:** 192.168.56.104  
 
 ---
@@ -44,7 +44,7 @@ Aman Jiwani
 | 53   | UDP      | DNS     | Open  | ISC BIND     | UDP service; might be exploited in DNS attacks |
 | 445  | TCP      | SMB     | Open  | Samba 4.x    | File sharing service; check for misconfigurations |
 
-> Fill this table with your lab scan results.
+
 
 ---
 
@@ -56,6 +56,4 @@ Aman Jiwani
 
 ---
 
-## References
-- [Nmap Official Documentation](https://nmap.org/docs.html)  
-- [Metasploitable2 Lab](https://sourceforge.net/projects/metasploitable/)
+
