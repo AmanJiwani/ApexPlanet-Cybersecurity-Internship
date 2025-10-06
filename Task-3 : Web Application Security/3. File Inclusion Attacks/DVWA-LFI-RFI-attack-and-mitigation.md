@@ -1,7 +1,5 @@
 # DVWA — Local File Inclusion (LFI) & Remote File Inclusion (RFI) — Attack Scenarios + Mitigation
 
-**Repository:** `web-app-security/dvwa-lfi-rfi`
-
 **Purpose:** Demonstrate Local File Inclusion (LFI) and Remote File Inclusion (RFI) on DVWA (low security), show example payloads you used, reproduction steps, and practical mitigations (server config and secure coding). Include reproduction commands, evidence, and GitHub commit instructions.
 
 ---
@@ -214,27 +212,4 @@ sudo tail -n 200 /var/log/apache2/error.log
 
 ---
 
-## 8. How to add this file to GitHub
 
-1. Save this content as `DVWA-LFI-RFI-attack-and-mitigation.md` in your repo.
-2. From terminal in repo folder:
-
-```bash
-git add DVWA-LFI-RFI-attack-and-mitigation.md
-git commit -m "Add DVWA LFI & RFI demo + mitigation"
-git push origin main
-```
-
-Or create the file using the GitHub web UI by clicking **Add file → Create new file**, paste the content, commit.
-
----
-
-## 9. Appendix & references
-
-* OWASP: File Inclusion
-* PHP manual: `allow_url_include`, `open_basedir`, `realpath()`
-* ModSecurity rules for directory traversal
-
----
-
-*End of document.*
