@@ -1,8 +1,4 @@
 # Web-App Security 
-A compact, copy-friendly README for your **web-app-security** repo.
-Includes the five DVWA labs you created: **SQL Injection**, **XSS**, **File Inclusion**, **Web Security Headers**, and **CSRF** — with one-line descriptions, quick repro payloads/commands, and short mitigation notes. Use this as the repo `README.md`.
-
----
 
 ## What this repo contains
 
@@ -58,40 +54,5 @@ Small, hands-on demos for learning and testing common web vulnerabilities on **D
 
 ---
 
-## Quick start (lab)
 
-1. Boot Kali VM and start Apache + DVWA.
-2. Log in to DVWA and set **Security: low**.
-3. Run the lab you want (open relevant `/vulnerabilities/...` page).
-4. Capture requests with browser DevTools / Burp for evidence.
-5. Apply mitigations in a test copy and verify.
 
----
-
-## Repo structure (suggested)
-
-```
-web-app-security/
-├─ sql/        — DVWA-SQL-attack-and-mitigation.md
-├─ xss/        — DVWA-XSS-attack-and-mitigation.md
-├─ lfi-rfi/    — DVWA-LFI-RFI-attack-and-mitigation.md
-├─ headers/    — DVWA-Web-Security-Headers.md
-├─ csrf/       — DVWA-CSRF-attack-and-mitigation.md
-└─ README.md   — (this file)
-```
-
----
-
-## Safety & ethics
-
-⚠️ Only run these tests in your **own** lab or with explicit permission. Never test production or third-party systems without authorization.
-
----
-
-## License
-
-MIT — use for learning and teaching only.
-
----
-
-Want this saved to the canvas as the repo `README.md` file (ready to push)? I can add it directly.
