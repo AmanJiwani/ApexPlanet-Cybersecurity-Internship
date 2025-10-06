@@ -1,5 +1,4 @@
-# Web-App Security — Quick Lab README
-
+# Web-App Security 
 A compact, copy-friendly README for your **web-app-security** repo.
 Includes the five DVWA labs you created: **SQL Injection**, **XSS**, **File Inclusion**, **Web Security Headers**, and **CSRF** — with one-line descriptions, quick repro payloads/commands, and short mitigation notes. Use this as the repo `README.md`.
 
