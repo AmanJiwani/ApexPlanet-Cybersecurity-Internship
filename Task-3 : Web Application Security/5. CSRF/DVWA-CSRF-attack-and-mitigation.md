@@ -206,27 +206,6 @@ Combine SameSite with tokens for defense-in-depth.
 
 ---
 
-## 10. How to add this file to GitHub
 
-1. Save this content as `DVWA-CSRF-attack-and-mitigation.md` in your repo.
-2. From terminal in repo folder:
-
-```bash
-git add DVWA-CSRF-attack-and-mitigation.md
-git commit -m "Add DVWA CSRF demo + mitigation (synchronizer token, SameSite)"
-git push origin main
-```
-
-Or create the file using the GitHub web UI by clicking **Add file → Create new file**, paste the content, commit.
-
----
-
-## 11. Appendix & references
-
-* OWASP CSRF Prevention Cheat Sheet
-* PHP `session_set_cookie_params()` and `hash_equals()`
-* SameSite cookie spec and compatibility notes
-
----
 
 *End of document.*
