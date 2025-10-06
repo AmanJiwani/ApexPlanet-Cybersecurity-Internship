@@ -1,6 +1,5 @@
 # DVWA — Web Security Headers (Apache) — Add & Verify
 
-**Repository:** `web-app-security/dvwa-web-headers`
 
 **Purpose:** Save current headers, add recommended security headers to Apache VirtualHost, enable HSTS for SSL hosts, restart Apache, and verify the new headers. Also includes how to scan a test site using securityheaders.com.
 
@@ -113,19 +112,4 @@ Open the site in your browser and paste the URL into securityheaders.com, or use
 
 ---
 
-## 7. How to add this file to GitHub
 
-1. Save this content as `DVWA-Web-Security-Headers.md` in your repo.
-2. From terminal in repo folder:
-
-```bash
-git add DVWA-Web-Security-Headers.md
-git commit -m "Add DVWA Web Security Headers guide (Apache)"
-git push origin main
-```
-
-Or create the file using the GitHub web UI by clicking **Add file → Create new file**, paste the content, commit.
-
----
-
-*End of document.*
