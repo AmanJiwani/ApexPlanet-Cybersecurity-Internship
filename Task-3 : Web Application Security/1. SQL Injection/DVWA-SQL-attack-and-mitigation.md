@@ -1,7 +1,5 @@
 # DVWA — SQL Injection Attack Scenarios + Mitigation Notes
 
-**Repository:** `web-app-security/dvwa-sqli`
-
 **Purpose:** Demonstrate SQL Injection (manual and automated with sqlmap) on DVWA (low security) and show how to prevent it using prepared statements (PHP `mysqli` and PHP `PDO`). Include reproduction steps, evidence (commands & sample output), remediation notes, and a suggested GitHub-friendly file structure.
 
 ---
@@ -202,30 +200,5 @@ Notes for PDO:
 
 ---
 
-## 7. How to add this file to GitHub
 
-1. Create a repo or navigate to your existing repo.
-2. Save this content as `DVWA-SQLi-attack-and-mitigation.md`.
-3. From terminal in repo folder:
-
-```bash
-git add DVWA-SQLi-attack-and-mitigation.md
-git commit -m "Add DVWA SQLi demo + prepared statement mitigation"
-git push origin main
-```
-
-Or create the file using the GitHub web UI by clicking **Add file → Create new file**, paste the content, commit.
-
----
-
-## 8. Appendix & references
-
-* DVWA (Damn Vulnerable Web App)
-* `sqlmap` project: [https://github.com/sqlmapproject/sqlmap](https://github.com/sqlmapproject/sqlmap)
-* PHP `mysqli` and `PDO` documentation
-* OWASP SQL Injection cheat sheets
-
----
-
-*End of document.*
 
