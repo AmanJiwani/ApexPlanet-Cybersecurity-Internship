@@ -1,7 +1,5 @@
 # DVWA — XSS Attack Scenarios + Mitigation Notes
 
-**Repository:** `web-app-security/dvwa-xss`
-
 **Purpose:** Demonstrate Stored and Reflected Cross‑Site Scripting (XSS) on DVWA (low security), include the payloads used, reproduction steps, and focused mitigations: **Input Validation** and **Content Security Policy (CSP)**. Provide ready-to-use examples (PHP and headers) and GitHub commit instructions.
 
 ---
@@ -224,31 +222,3 @@ app.use(helmet({
 app.listen(3000);
 ```
 
----
-
-## 8. How to add this file to GitHub
-
-1. Create a repo or navigate to your existing repo.
-2. Save this content as `DVWA-XSS-attack-and-mitigation.md`.
-3. From terminal in repo folder:
-
-```bash
-git add DVWA-XSS-attack-and-mitigation.md
-git commit -m "Add DVWA XSS demo + input validation & CSP mitigation"
-git push origin main
-```
-
-Or create the file using the GitHub web UI by clicking **Add file → Create new file**, paste the content, commit.
-
----
-
-## 9. Appendix & references
-
-* OWASP XSS (Cross Site Scripting) Cheat Sheet
-* CSP specification and MDN docs
-* PHP `htmlspecialchars()` docs
-* Helmet (Node.js) docs
-
----
-
-*End of document.*
